@@ -31,7 +31,9 @@ index.scss
 ```
 
 
-please use webpack that you configured in the previous task + host you page on girhub pages
+please use webpack that you configured in the previous task
+
+instead of hosting your page - just attach screenshot of your work to the pull request
 
 please use latest standards of js (in places where you need it)
 
