@@ -10,7 +10,7 @@ npm i
 ## To start dev mode
 
 ```
-npm run start
+npm run dev
 ```
 
 ## To build
