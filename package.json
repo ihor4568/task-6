@@ -1,0 +1,38 @@
+{
+  "name": "task-5",
+  "version": "1.0.0",
+  "description": "task-5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "author": "Aleksandr Tkachenko",
+  "license": "ISC",
+  "devDependencies": {
+    "@material/button": "^0.40.0",
+    "@material/drawer": "^0.40.0",
+    "@material/list": "^0.40.0",
+    "@material/ripple": "^0.40.0",
+    "@material/top-app-bar": "^0.40.0",
+    "autoprefixer": "^9.1.5",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "material-components-web": "^0.40.0",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "@material/auto-init": "^0.39.0",
+    "@material/card": "^0.40.0",
+    "@material/menu": "^0.40.0",
+    "@material/select": "^0.40.0"
+  }
+}
