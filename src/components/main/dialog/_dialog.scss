@@ -1,0 +1,9 @@
+@import "@material/dialog/mdc-dialog";
+
+.mdc-dialog__scrim {
+  opacity: 1;
+}
+.mdc-dialog .mdc-dialog__scrim {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.383);
+}

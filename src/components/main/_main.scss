@@ -1,0 +1,30 @@
+@import "text-field/text-field";
+@import "button/button";
+@import "dialog/dialog";
+@import "cards/cards";
+@import "list/list";
+@import "menu/menu";
+
+
+.main-content {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: .1rem solid #000;
+  padding-bottom: 2rem;
+  justify-content: space-around;
+}
+.main-content-box {
+  text-align: center;
+  overflow: hidden;
+  flex-basis: calc(25% - 3rem);
+  border: .1rem solid rgba(97, 76, 76, 0.27);
+  margin-top: 2rem;
+  &_dialog {
+    padding: 2rem;
+  }
+}
+.mdc-card__media-content {
+  padding-top: 13rem;
+  font-size: 2.4rem;
+  color: #fff;
+}

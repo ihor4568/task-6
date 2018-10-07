@@ -1,0 +1,34 @@
+@import "@material/textfield/mdc-text-field";
+@import "@material/textfield/icon/mdc-text-field-icon";
+
+
+.username,
+.password {
+  display: block;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 200px;
+  margin: auto;
+}
+
+.button-container button {
+  margin: 3px;
+}
+.searchform {
+  @include mdc-text-field-ink-color(#fefefe);
+  @include mdc-text-field-label-color(#fefefe);
+  @include mdc-text-field-caret-color(#fefefe);
+  @include mdc-text-field-outline-color(rgba(254, 254, 254, 0.527));
+  @include mdc-text-field-focused-outline-color(#fefefe);
+  @include mdc-text-field-hover-outline-color(#fefefe);
+  height: auto;
+  @include mdc-text-field-icon-color(#fefefe, $styleSecondIcon: false);
+}
+.mdc-text-field__icon-search {
+top: .75rem;
+}

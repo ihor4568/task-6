@@ -1,0 +1,10 @@
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+
+.mdc-top-app-bar {
+  position: sticky;
+  top: 0;
+  height: auto;
+  max-height: auto;
+  // @include mdc-top-app-bar-fill-color(#353535);
+}

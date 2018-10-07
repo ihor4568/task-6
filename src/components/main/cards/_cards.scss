@@ -1,0 +1,10 @@
+@import "@material/card/mdc-card";
+@import "@material/icon-button/mdc-icon-button";
+
+// .mdc-card {
+//   height: 350px;
+//   width: 350px;
+// }
+.mdc-card__media {
+  background-image: url("../img/bg.jpeg");
+}

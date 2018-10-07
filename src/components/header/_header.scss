@@ -1,0 +1,8 @@
+@import "top-app-bar/top-app-bar";
+@import "drawer/drawer";
+@import "tab-bar/tab-bar";
+
+.header {
+  border-bottom: .2rem solid rgba(68, 44, 46, 0.12);
+  overflow: hidden;
+}

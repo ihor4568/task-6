@@ -1,0 +1,9 @@
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  overflow: auto;
+  box-sizing: border-box;
+  @media only screen and (max-width: $large-break-point) {
+    padding: 0 3rem;
+  }
+}

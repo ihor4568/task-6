@@ -1,0 +1,19 @@
+.page {
+  font: normal normal $basic-font-size $basic-font-stack;
+
+  @media only screen and (max-width: $large-break-point) {
+    font-size: $basic-font-size - 2;
+  }
+
+  @media only screen and (max-width: $small-break-point) {
+    font-size: $basic-font-size - 2;
+  }
+
+  @media only screen and (max-width: $smaller-break-point) {
+    font-size: $basic-font-size;
+  }
+
+  @media only screen and (max-width: $tiny-break-point) {
+    font-size: $basic-font-size - 2;
+  }
+}

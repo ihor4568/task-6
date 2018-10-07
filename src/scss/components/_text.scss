@@ -1,0 +1,15 @@
+.text {
+  font: normal normal 1.6rem $basic-font-stack;
+  color: #848484;
+  line-height: 2.6rem;
+
+  &_quote {
+    margin: 0;
+    padding: 0;
+    font: {
+      style: italic;
+      size: 1.8rem;
+    }
+    line-height: 3rem;
+  }
+}
