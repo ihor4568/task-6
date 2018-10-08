@@ -1,0 +1,19 @@
+.page-content {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.app-bar {
+  position: absolute;
+}

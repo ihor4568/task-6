@@ -1,0 +1,337 @@
+<!doctype html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="dist/style.css">
+  <title>Bricks Club</title>
+
+</head>
+
+<body class="page-content">
+  <aside class="mdc-drawer mdc-drawer--dismissible" data-mdc-auto-init="MDCDrawerDismissible">
+    <div class="mdc-drawer__content">
+      <div class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" href="#"
+          aria-selected="true">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">gamepad</i>
+          <span class="mdc-list-item__text">Sets</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">toys</i>
+          <span class="mdc-list-item__text">Exclusives</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">location_city</i>
+          <span class="mdc-list-item__text">Bricks</span>
+        </a>
+        <a class="mdc-list-item" href="#" aria-selected="true">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">flare</i>
+          <span class="mdc-list-item__text">Extras</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">grade</i>
+          <span class="mdc-list-item__text">Sale</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <div class="mdc-drawer-app-content">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <span class="mdc-top-app-bar__title">Bricks club</span>
+        </section>
+        <button class="dialog-button dialog-item mdc-button">Switch account</button>
+
+        <div class="mdc-select mdc-select--outlined">
+          <select class="my-select mdc-select__native-control">
+            <option value="" disabled selected>Choose your location</option>
+            <option value="United States">
+              United States
+            </option>
+            <option value="Asia">
+              Asia
+            </option>
+            <option value="Europe">
+              Europe
+            </option>
+            <option value="Russia">
+              Russia
+            </option>
+          </select>
+          <label class="mdc-floating-label"></label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <div class="mdc-top-app-bar--fixed-adjust">
+      </div>
+      <section class="search">
+        <form class="search__form" action="#">
+          <label>
+            <input class="search__search-field" type="search" placeholder="Enter product name for search"
+              name="search">
+          </label>
+        </form>
+      </section>
+      <section class="category-cards">
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/city.jpg"></div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-buttons">
+              <button class="mdc-button mdc-card__action mdc-card__action--button">Go
+                to category</button>
+            </div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/star-wars.jpg"></div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-buttons">
+              <button class="mdc-button mdc-card__action mdc-card__action--button">Go
+                to category</button>
+            </div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/creator.jpg"></div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-buttons">
+              <button class="mdc-button mdc-card__action mdc-card__action--button">Go
+                to category</button>
+            </div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/technic.jpg"></div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-buttons">
+              <button class="mdc-button mdc-card__action mdc-card__action--button">Go
+                to category</button>
+            </div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/mindstorms.jpg"></div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-buttons">
+              <button class="mdc-button mdc-card__action mdc-card__action--button">Go
+                to category</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <p class="about__heading">
+          The Bricks Group is a privately held company based in Billund,
+          Denmark. The company is still owned by the Kirk Kristiansen family
+          who founded it in 1932.
+        </p>
+        <p class="about__text">
+          It is the Bricks philosophy that ‘good quality play’ enriches
+          a child’s life – and lays the foundation for later adult life. We
+          believe that play is a key element in children’s growth and
+          development
+          and stimulates the imagination and the emergence of
+          ideas and creative expression. All LEGO products are based
+          on this underlying philosophy of learning and development
+          through play.
+
+        </p>
+        <p class="about__text">
+          <b class="about__text-heading">Only the best is good enough</b><br>
+          True to its motto ‘Only the best is good enough’, the Bricks
+          Group has been emphasising the importance of high quality
+          since 1932, where the founder Ole Kirk Kristiansen began
+          making wooden toys. High quality and safe products have remained
+          the focal point for the LEGO Group throughout the years -
+          and it still is. Bricks products are tested rigorously to live up
+          to the strictest safety and quality standards
+          as well as our own high expectations. This approach
+          has made children and adults return to LEGO products time
+          and again.
+
+        </p>
+        <p class="about__text">
+          <b class="about__text-heading">Systematic creativity</b><br>
+          Bricks are all part of the Bricks system, which essentially
+          means that they can easily be combined in innumerable
+          ways – and just as easily be dismantled. The more LEGO
+          bricks you have, the more fertile your creativity can become.
+          The combination of a structured system, logic and unlimited
+          creativity encourages the child to learn through play in a
+          wholly unique LEGO fashion.
+        </p>
+        <p class="about__text">
+          <b class="about__text-heading">A positive impact</b><br>
+          The Bricks Group wants to leave a positive impact – be it in
+          respect to the Group’s stakeholders or the wider community.
+          The Bricks Group is committed to caring for the environment
+          and the society that children will inherit, and to inspiring and
+          developing the builders of tomorrow.
+        </p>
+      </section>
+      <section class="top-products-cards">
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/city.jpg"></div>
+          </div>
+          <div class="mdc-card__action-icons">
+            <div class="mdc-menu-surface--anchor">
+              <button class="menu-button mdc-button">Button</button>
+              <div class="mdc-menu mdc-menu-surface">
+                <ul class="mdc-list" role="menu" aria-hidden="true"
+                  aria-orientation="vertical">
+                  <li>
+                    <ul class="mdc-menu__selection-group">
+                      <li class="mdc-list-item" role="menuitem">
+                        <span class="mdc-list-item__text">Add to cart</span>
+                      </li>
+                      <li class="mdc-list-divider" role="separator"></li>
+                      <li class="mdc-list-item" role="menuitem">
+                        <span class="mdc-list-item__text">Quick buy</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/star-wars.jpg"></div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/creator.jpg"></div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/technic.jpg"></div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/mindstorms.jpg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="top-products-cards">
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/city.jpg"></div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/star-wars.jpg"></div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/creator.jpg"></div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/technic.jpg"></div>
+          </div>
+        </div>
+        <div class="my-card mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"><img class="card-image" src="components/images/mindstorms.jpg"></div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="demo">
+          <div class="mdc-tab-bar custom-demo-tab-bar" role="tablist"
+            aria-label="Navigation">
+            <div class="mdc-tab-scroller">
+              <div class="mdc-tab-scroller__scroll-area">
+                <div class="mdc-tab-scroller__scroll-content">
+                  <button class="mdc-tab" role="tab" aria-selected="false">
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">HOME</span>
+                      <span class="mdc-tab-indicator">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                  <button class="mdc-tab mdc-tab--active" role="tab"
+                    aria-selected="true">
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">CONTACT US</span>
+                      <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                  <button class="mdc-tab" role="tab" aria-selected="false">
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">ABOUT US</span>
+                      <span class="mdc-tab-indicator">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <section>
+    <div class="mdc-dialog" role="alertdialog" aria-modal="true"
+      aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content">
+      <div class="mdc-dialog__container">
+        <div class="mdc-dialog__surface">
+          <h2 class="mdc-dialog__title" id="my-dialog-title">Account settings</h2>
+          <div class="mdc-dialog__content" id="my-dialog-content">
+            <ul class="mdc-list mdc-list--avatar-list">
+              <li class="mdc-list-item" tabindex="0" data-mdc-dialog-action="none">
+                <span class="mdc-list-item__text">User 1</span>
+              </li>
+              <li class="mdc-list-item" data-mdc-dialog-action="callisto">
+                <span class="mdc-list-item__text">User 2</span>
+              </li>
+              <li class="mdc-list-item" data-mdc-dialog-action="callisto">
+                <span class="mdc-list-item__text">Create new account</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-dialog__scrim"></div>
+    </div>
+  </section>
+  <script src="dist/main.js"></script>
+</body>
+
+</html>

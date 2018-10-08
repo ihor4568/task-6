@@ -1,0 +1,23 @@
+.category-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0 40px 0;
+  background: #ffcf00;
+}
+
+.my-card {
+  height: 330px;
+  width: 264px;
+  justify-content: center;
+}
+
+.card-image {
+  width: 210px;
+  height: auto;
+  margin-left: 27px;
+}
+
+.mdc-card__actions {
+  padding-top: 15px;
+  margin: 0 auto;
+}

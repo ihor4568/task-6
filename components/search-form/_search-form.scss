@@ -1,0 +1,20 @@
+.search {
+  padding: 20px 0 20px 0;
+  text-align: center;
+
+  &__search-field {
+    width: 400px;
+    height: 38px;
+    border: 2px solid #ffcf00;
+    border-radius: 15px;
+    padding-left: 21px;
+    font-size: 12px;
+
+    &::placeholder {
+      color: #999;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}
