@@ -1,0 +1,7 @@
+@import '@material/drawer/mdc-drawer';
+@import '@material/list/mdc-list';
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+}

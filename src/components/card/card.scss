@@ -1,0 +1,10 @@
+@import '@material/card/mdc-card';
+@import '@material/icon-button/mdc-icon-button';
+
+.my-card {
+  max-width: 400px;
+  max-height: 400px;
+}
+.my-card-img {
+  background-image: url(/src/img/whale.jpg);
+}

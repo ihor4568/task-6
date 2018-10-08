@@ -1,0 +1,10 @@
+import TopBar from './components/top-app-bar/top-app-bar';
+import Buttons from './components/button/button';
+import ToggleDrawer from './components/drawer/drawer';
+// import Menu from './components/menu/menu';
+import TabBar from './components/tab-bar/tab-bar';
+TopBar();
+Buttons();
+ToggleDrawer();
+// Menu();
+TabBar();
