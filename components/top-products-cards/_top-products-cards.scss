@@ -1,0 +1,19 @@
+.top-products-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0 40px 0;
+  background: #ffcf00;
+}
+
+.my-card-1 {
+  height: auto;
+  width: 264px;
+}
+
+.mdc-menu__selection-group .mdc-list-item {
+  padding: 0 10px 0 10px;
+}
+
+.mdc-card__action-icons {
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color(#31a1e0);
+}
+
+.dialog-button {
+  margin: 15px 20px 0 0;
+  font-size: 15px;
+  color: #fff;
+  @include mdc-button-ink-color(white);
+}
+
+.my-select {
+  margin: 5px 20px 0 0;
+  font-size: 15px;
+  color: #fff;
+  @include mdc-select-ink-color(#fff);
+}

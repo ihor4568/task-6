@@ -1,0 +1,17 @@
+.about {
+  width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #ffcf00;
+  border-radius: 20px;
+
+  &__heading {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__text,
+  &__text-heading {
+    font-size: 15px;
+  }
+}
