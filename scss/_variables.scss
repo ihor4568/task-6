@@ -1,0 +1,27 @@
+$container-width: 1024px;
+$medium-padding: 40px;
+
+$banner-left-color: #f9e1e9;
+$main-color: #eaac00;
+
+$basic-font: Poppins-Regular, AdobeInvisFont, MyriadPro-Regular;
+$heading-font: Poppins, $basic-font;
+$bold-font: Poppins-SemiBold, $basic-font;
+$medium-font: Poppins-Medium, $basic-font;
+
+@mixin extra-large-break-point {
+  @media only screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin large-break-point {
+  @media only screen and (max-width: 700px) {
+    @content;
+  }
+}
+@mixin small-break-point {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
