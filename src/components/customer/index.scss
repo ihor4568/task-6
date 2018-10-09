@@ -1,0 +1,23 @@
+.customer {
+  display: none;
+
+  &__contacts {
+    padding: 40px 20px;
+  }
+
+  &__base {
+    margin-bottom: 40px;
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  &__position {
+    opacity: 0.8;
+  }
+
+  &__contact-field {
+    margin: 10px 0;
+  }
+}

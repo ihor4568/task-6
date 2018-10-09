@@ -1,0 +1,9 @@
+node_modules
+
+dist
+
+.idea
+
+### macOS ###
+.DS_Store
+

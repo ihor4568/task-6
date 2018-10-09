@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.css">
+  <title>Intro to material</title>
+</head>
+
+<body>
+  <aside class="mdc-drawer mdc-drawer--dismissible">
+    <div class="mdc-drawer__header">
+      <h3 class="mdc-drawer__title">CreativeCRM</h3>
+    </div>
+    <div class="mdc-drawer__content">
+      <div class="mdc-list">
+        <a class="mdc-list-item" href="#" aria-selected="true">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+          <span class="mdc-list-item__text">Dashboard</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>
+          <span class="mdc-list-item__text">Reports</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--activated" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">account_circle</i>
+          <span class="mdc-list-item__text">Customers</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">calendar_today</i>
+          <span class="mdc-list-item__text">Calendar</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list_alt</i>
+          <span class="mdc-list-item__text">Tasks</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-app-content">
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row app-bar" id="app-bar">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <span class="mdc-top-app-bar__title"></span>
+        </section>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <div class="mdc-top-app-bar--fixed-adjust customer">
+
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner customer__contacts">
+            <div class="mdc-layout-grid__cell customer__base">
+              <img src="assets/max-jones.jpg" alt="customer-picture">
+              <h5 class="mdc-typography	mdc-typography--headline5 customer__name">Max Jones</h5>
+              <span class="mdc-typography--subtitle2 customer__position">Sales & Marketing</span>
+            </div>
+
+            <div class="mdc-layout-grid__cell">
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell">
+                  <h6 class="mdc-typography	mdc-typography--subtitle2 customer__contact-field">Phone</h6>
+                  <div class="mdc-text-field mdc-text-field--disabled">
+                    <input type="text" id="phone-field" class="mdc-text-field__input">
+                    <label class="mdc-floating-label" for="my-text-field">(+31) 140 175 468</label>
+                    <div class="mdc-line-ripple"></div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell ">
+                  <h6 class="mdc-typography	mdc-typography--subtitle2 customer__contact-field">Email</h6>
+                  <div class="mdc-text-field mdc-text-field--disabled">
+                    <input type="text" id="email-field" class="mdc-text-field__input">
+                    <label class="mdc-floating-label" for="my-text-field">maxjones@gmail.com</label>
+                    <div class="mdc-line-ripple"></div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                  <h6 class="mdc-typography	mdc-typography--subtitle2 customer__contact-field">Address</h6>
+                  <div class="mdc-text-field mdc-text-field--outlined ">
+                    <input type="text" id="address-field" class="mdc-text-field__input">
+                    <label class="mdc-floating-label" for="my-text-field">Binnenweg 50, Rotterdam</label>
+                    <div class="mdc-line-ripple"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-mockup"></div>
+
+    </main>
+  </div>
+</body>
+
+</html>
