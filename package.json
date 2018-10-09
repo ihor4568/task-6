@@ -1,0 +1,60 @@
+{
+  "name": "task-6",
+  "version": "1.0.0",
+  "description": "task-6",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Ivan Yevsiutin",
+  "license": "ISC",
+  "devDependencies": {
+    "@material/button": "^0.40.0",
+    "@material/card": "^0.40.0",
+    "@material/dialog": "^0.40.0",
+    "@material/drawer": "^0.40.0",
+    "@material/list": "^0.40.0",
+    "@material/menu": "^0.40.0",
+    "@material/ripple": "^0.40.0",
+    "@material/select": "^0.40.0",
+    "@material/tab-bar": "^0.40.0",
+    "@material/top-app-bar": "^0.40.0",
+    "autoprefixer": "^9.1.5",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "husky": "^1.1.0",
+    "js-beautify": "^1.8.6",
+    "lint-staged": "^7.3.0",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.14.3",
+    "pre-commit": "^1.2.2",
+    "postcss-cli": "^6.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*{/*.scss,/*/*.scss}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.html": [
+      "js-beautify -s 2 -w 80 -r",
+      "git  add"
+    ]
+  }
+}
