@@ -1,44 +1,49 @@
-const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const devMode = process.env.NODE_ENV !== 'production';
+const path = require("path");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
   entry: {
-    app: './src/app.js'
+    app: "./src/app.js"
   },
   module: {
     rules: [
       {
         test: /\.scss$/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
+          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+          "css-loader",
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
             options: {
-              indent: 'postcss',
-              plugins: [require('autoprefixer')]
+              indent: "postcss",
+              plugins: [require("autoprefixer")]
             }
           },
-          'sass-loader'
+          {
+            loader: "sass-loader",
+            options: {
+              includePaths: ["./node_modules"]
+            }
+          }
         ]
       },
       {
         test: [/.(png|svg|jpg)$/, /\.(ttf)/],
-        use: 'file-loader'
+        use: "file-loader"
       },
       {
         test: /\.html$/,
-        use: 'html-loader'
+        use: "html-loader"
       }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: "src/index.html",
       minify: {
         collapseWhitespace: true,
         removeEmptyAttributes: true,
@@ -47,12 +52,12 @@ module.exports = {
       }
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
+      filename: devMode ? "[name].css" : "[name].[hash].css",
+      chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
     })
   ],
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist")
   }
 };
