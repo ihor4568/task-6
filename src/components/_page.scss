@@ -1,0 +1,16 @@
+.page {
+  font: normal $regular-weight $basic-font-size $basic-font-stack;
+  color: #4f4f4f;
+
+  @media only screen and (max-width: $small-break-point) {
+    font-size: $basic-font-size - 2;
+  }
+
+  @media only screen and (max-width: $smaller-break-point) {
+    font-size: $basic-font-size - 4;
+  }
+
+  @media only screen and (max-width: $tiny-break-point) {
+    font-size: $basic-font-size - 4;
+  }
+}
