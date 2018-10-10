@@ -38,3 +38,5 @@ Used:
 - [x] - Card
 - [x] - Tab bar
 - [ ] - also any components you want
+
+![screenshot](https://github.com/ihor4568/task-6/blob/pbaranchuk/assets/img/pretty.png)
