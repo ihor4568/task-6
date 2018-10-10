@@ -4,7 +4,7 @@
   "description": "Webpack setup &amp; website markup",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development  --open",
     "build": "webpack"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "husky": "^1.1.1",
     "img-loader": "^3.0.0",
     "lint-staged": "^7.3.0",
+    "material-components-web": "^0.40.1",
     "mini-css-extract-plugin": "^0.4.3",
     "node-sass": "^4.9.3",
     "postcss-loader": "^3.0.0",
@@ -52,6 +53,8 @@
     ]
   },
   "dependencies": {
+    "@material/drawer": "^0.40.0",
+    "@material/top-app-bar": "^0.40.0",
     "jquery": "^3.3.1"
   }
 }

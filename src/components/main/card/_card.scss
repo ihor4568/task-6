@@ -1,0 +1,7 @@
+@import "@material/card/mdc-card";
+
+.mdc-card__media {
+  background-image: url("../assets/img/pretty.png");
+  max-height: 200px;
+  width: auto;
+}

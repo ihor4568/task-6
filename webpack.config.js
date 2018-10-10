@@ -6,7 +6,7 @@ const autoprefixer = require("autoprefixer");
 
 module.exports = {
   mode: "production",
-  entry: "./src/js/index.js",
+  entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js"
@@ -20,7 +20,12 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
-          "sass-loader"
+          {
+            loader: "sass-loader",
+            options: {
+              includePaths: ["./node_modules"]
+            }
+          }
         ]
       },
       {

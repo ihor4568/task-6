@@ -6,11 +6,144 @@
   <meta charset="UTF-8">
   <title>Webpack App</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body>
+<body class="page">
+
+  <aside class="mdc-drawer mdc-drawer--dismissible">
+    <div class="mdc-drawer__content">
+      <div class="mdc-list">
+        <a class="mdc-list-item" href="#" aria-selected="true">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+          <span class="mdc-list-item__text">Main page</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+          <span class="mdc-list-item__text">Dashboard</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--activated" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+          <span class="mdc-list-item__text">Notifications</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+          <span class="mdc-list-item__text">Checkout</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-app-content">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <span class="mdc-top-app-bar__title">Material Design test page</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+          role="toolbar">
+          <div class="mdc-menu-surface--anchor">
+            <button class="mdc-button mdc-button--raised">Open Menu</button>
+            <div class="mdc-menu mdc-menu-surface">
+              <ul class="mdc-list" role="menu" aria-hidden="true"
+                aria-orientation="vertical">
+                <li class="mdc-list-item" role="menuitem">
+                  <span class="mdc-list-item__text">A Menu Item</span>
+                </li>
+                <li class="mdc-list-item" role="menuitem">
+                  <span class="mdc-list-item__text">Another Menu Item</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="#" class="material-icons mdc-top-app-bar__action-item"
+            aria-label="Download" alt="Download">file_download</a>
+          <a href="#" class="material-icons mdc-top-app-bar__action-item"
+            aria-label="Print this page" alt="Print this page">print</a>
+          <a href="#" class="material-icons mdc-top-app-bar__action-item"
+            aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+        </section>
+      </div>
+    </header>
+  </div>
 
 
+
+  <main class="main-content" id="main-content">
+    <div class="mdc-top-app-bar--fixed-adjust main">
+      <div>
+        <h3>Product</h3>
+        <p>Lorem ipsum dolore ist amenu ginus e turne ms ipsum dolore ist amenu
+          ginus e turne ms ipsum dolore ist amenu ginus
+          e turne ms ipsum dolore ist amenu ginus e turne ms ipsum dolore ist
+          amenu ginus e turne ms ipsum dolore ist amenu
+          ginus e turne ms ipsum dolore ist amenu ginus e turne ms</p>
+        <div class="mdc-tab-bar" role="tablist">
+          <div class="mdc-tab-scroller">
+            <div class="mdc-tab-scroller__scroll-area">
+              <div class="mdc-tab-scroller__scroll-content">
+                <button class="mdc-tab  mdc-tab--active" role="tab"
+                  aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">done_all</span>
+                    <span class="mdc-tab__text-label">100 ml</span>
+                  </span>
+                  <span class="mdc-tab-indicator">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button class="mdc-tab mdc-tab--active" role="tab"
+                  aria-selected="true" tabindex="1">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">done_all</span>
+                    <span class="mdc-tab__text-label">200 ml</span>
+                  </span>
+                  <span class="mdc-tab-indicator">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mdc-card">
+          <div class="mdc-card__media mdc-card__media--square">
+            <div class="mdc-card__media-content"></div>
+          </div>
+          <p>Our Changing Planet</p>
+          <p>by Kurt Wagner</p>
+          <p>Visit ten places on our planet that are undergoing the biggest
+            changes today.</p>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-buttons">
+              <button class="mdc-button mdc-card__action mdc-card__action--button">Action
+                1</button>
+              <button class="mdc-button mdc-card__action mdc-card__action--button">Action
+                2</button>
+            </div>
+            <div class="mdc-card__action-icons">
+              <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                title="Fave">favorite</button>
+              <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                title="More options">more_vert</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <h3>Filters</h3>
+        <p>Use filters to find exactly what you want!</p>
+
+      </div>
+    </div>
+  </main>
 
   <script src="bundle.js"></script>
 </body>
