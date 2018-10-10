@@ -1,6 +1,6 @@
 # 🖥 Task-6
 
-Fashion website markup
+"Material Design Components" Test drive
 
 ### 🚀 Getting Started
 
@@ -23,3 +23,18 @@ then go to http://localhost:3000
 ```
 npx webpack
 ```
+
+Haven't finished yet. For now you can see the following:
+
+Used:
+
+- [x] - Top App Bar
+- [x] - Drawer
+- [x] - Button
+- [ ] - Select
+- [ ] - Dialog
+- [ ] - List
+- [x] - Menu
+- [x] - Card
+- [x] - Tab bar
+- [ ] - also any components you want
