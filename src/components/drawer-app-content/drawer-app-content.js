@@ -1,10 +1,9 @@
-const listEl = document.querySelector('.mdc-drawer .mdc-list');
-const mainContentEl = document.querySelector('.mdc-drawer-app-content');
+import { MDCDrawer } from "@material/drawer";
+import { MDCTopAppBar } from "@material/top-app-bar";
 
-listEl.addEventListener('click', (event) => {
-  mainContentEl.querySelector('input, button').focus();
-});
-
-document.body.addEventListener('MDCDrawer:closed', () => {
-  mainContentEl.querySelector('input, button').focus();
+const drawer = MDCDrawer.attachTo(document.querySelector(".mdc-drawer"));
+const topAppBar = MDCTopAppBar.attachTo(document.getElementById("app-bar"));
+topAppBar.setScrollTarget(document.getElementById("main-content"));
+topAppBar.listen("MDCTopAppBar:nav", () => {
+  drawer.open = !drawer.open;
 });

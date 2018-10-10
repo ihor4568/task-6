@@ -1,4 +1,4 @@
 // CSS files import
-import './index.scss';
+import "./index.scss";
 
-import './components/drawer-app-content/drawer-app-content.js';
+import drawer from "./components/drawer-app-content";
