@@ -24,19 +24,6 @@ then go to http://localhost:3000
 npx webpack
 ```
 
-Haven't finished yet. For now you can see the following:
-
-Used:
-
-- [x] - Top App Bar
-- [x] - Drawer
-- [x] - Button
-- [ ] - Select
-- [ ] - Dialog
-- [ ] - List
-- [x] - Menu
-- [x] - Card
-- [x] - Tab bar
-- [ ] - also any components you want
+## Website screenshot
 
 ![screenshot](https://github.com/ihor4568/task-6/blob/pbaranchuk/assets/img/mdc.png)
