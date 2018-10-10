@@ -44,7 +44,8 @@
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
           role="toolbar">
           <div class="mdc-menu-surface--anchor">
-            <button class="mdc-button mdc-button--raised">Open Menu</button>
+            <button class="mdc-button mdc-button-header mdc-button--raised">Open
+              Menu</button>
             <div class="mdc-menu mdc-menu-surface">
               <ul class="mdc-list" role="menu" aria-hidden="true"
                 aria-orientation="vertical">
@@ -80,26 +81,27 @@
           e turne ms ipsum dolore ist amenu ginus e turne ms ipsum dolore ist
           amenu ginus e turne ms ipsum dolore ist amenu
           ginus e turne ms ipsum dolore ist amenu ginus e turne ms</p>
+
         <div class="mdc-tab-bar" role="tablist">
           <div class="mdc-tab-scroller">
             <div class="mdc-tab-scroller__scroll-area">
               <div class="mdc-tab-scroller__scroll-content">
-                <button class="mdc-tab  mdc-tab--active" role="tab"
+                <button class="mdc-tab mdc-tab-first mdc-tab--active" role="tab"
                   aria-selected="true" tabindex="0">
                   <span class="mdc-tab__content">
                     <span class="mdc-tab__icon material-icons" aria-hidden="true">done_all</span>
-                    <span class="mdc-tab__text-label">100 ml</span>
+                    <span class="mdc-tab__text-label">Sprey</span>
                   </span>
                   <span class="mdc-tab-indicator">
                     <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
                   </span>
                   <span class="mdc-tab__ripple"></span>
                 </button>
-                <button class="mdc-tab mdc-tab--active" role="tab"
+                <button class="mdc-tab mdc-tab-second mdc-tab--active" role="tab"
                   aria-selected="true" tabindex="1">
                   <span class="mdc-tab__content">
                     <span class="mdc-tab__icon material-icons" aria-hidden="true">done_all</span>
-                    <span class="mdc-tab__text-label">200 ml</span>
+                    <span class="mdc-tab__text-label">Gel</span>
                   </span>
                   <span class="mdc-tab-indicator">
                     <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
@@ -111,20 +113,24 @@
           </div>
         </div>
 
-        <div class="mdc-card">
-          <div class="mdc-card__media mdc-card__media--square">
+        <div class="mdc-card mdc-card-first">
+          <div class="mdc-card__media mdc-card__media-first mdc-card__media--square">
             <div class="mdc-card__media-content"></div>
           </div>
-          <p>Our Changing Planet</p>
-          <p>by Kurt Wagner</p>
-          <p>Visit ten places on our planet that are undergoing the biggest
-            changes today.</p>
+          <p class="card__title">Awesome product</p>
+          <p class="card__brand">by Great Company</p>
+          <p class="card__description">Try it, buy it and you will forget about
+            other beauty products and will be our client
+            for a lifetime! We garantee that you will get the best quality for
+            the lowest price on a market.</p>
           <div class="mdc-card__actions">
             <div class="mdc-card__action-buttons">
-              <button class="mdc-button mdc-card__action mdc-card__action--button">Action
-                1</button>
-              <button class="mdc-button mdc-card__action mdc-card__action--button">Action
-                2</button>
+              <button class="mdc-button mdc-button-card mdc-button--raised mdc-card__action mdc-card__action--button">ADD
+                TO THE CART
+              </button>
+              <button class="mdc-button mdc-button-card mdc-button--raised smdc-card__action mdc-card__action--button">ADD
+                TO YOUR WISHES
+              </button>
             </div>
             <div class="mdc-card__action-icons">
               <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
@@ -135,14 +141,134 @@
           </div>
         </div>
 
+        <div class="mdc-card mdc-card-second mdc-card-hidden">
+          <div class="mdc-card__media mdc-card__media-second mdc-card__media--square">
+            <div class="mdc-card__media-content"></div>
+          </div>
+          <p class="card__title">Gel Antiperspirant</p>
+          <p class="card__brand">by Gillette</p>
+          <p class="card__description">The well-known and effective product for
+            you and your family.</p>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-buttons">
+              <button class="mdc-button mdc-button-card mdc-button--raised mdc-card__action mdc-card__action--button">ADD
+                TO THE CART
+              </button>
+              <button class="mdc-button mdc-button-card mdc-button--raised mdc-card__action mdc-card__action--button">ADD
+                TO YOUR WISHES
+              </button>
+            </div>
+            <div class="mdc-card__action-icons">
+              <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                title="Fave">favorite</button>
+              <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+                title="More options">more_vert</button>
+            </div>
+          </div>
+        </div>
+        <p>Lorem ipsum dolore ist amenu ginus e turne ms ipsum dolore ist amenu
+          ginus e turne ms ipsum dolore ist amenu ginus
+          e turne ms.</p>
       </div>
 
       <div>
         <h3>Filters</h3>
         <p>Use filters to find exactly what you want!</p>
 
+        <div class="select__wrapper">
+
+          <div class="mdc-select">
+            <select class="mdc-select__native-control">
+              <option value="vegetables">
+                1
+              </option>
+              <option value="fruit">
+                10
+              </option>
+              <option value="dairy" selected>
+                100
+              </option>
+            </select>
+            <label class="mdc-floating-label mdc-floating-label--float-above">Pick
+              the Qty</label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+
+          <div class="mdc-select">
+            <select class="mdc-select__native-control">
+              <option value="vegetables">
+                London
+              </option>
+              <option value="fruit">
+                Poland
+              </option>
+              <option value="dairy" selected>
+                Ukraine
+              </option>
+            </select>
+            <label class="mdc-floating-label mdc-floating-label--float-above">Select
+              the country of dispatch</label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+
+          <div class="mdc-text-field text-field-bottom mdc-text-field--fullwidth">
+            <input type="text" placeholder="Enter your promocode" id="my-text-field"
+              class="mdc-text-field__input">
+            <label for="my-text-field"></label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+
+          <div class="mdc-dialog" role="alertdialog" aria-modal="true"
+            aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content">
+            <div class="mdc-dialog__container">
+              <div class="mdc-dialog__surface">
+                <h2 class="mdc-dialog__title" id="my-dialog-title">
+                  Fill the form
+                </h2>
+                <div class="mdc-dialog__content" id="my-dialog-content">
+                  <div class="mdc-text-field mdc-text-field--fullwidth">
+                    <input type="text" placeholder="Enter your name" id="my-text-field"
+                      class="mdc-text-field__input">
+                    <div class="mdc-line-ripple"></div>
+                  </div>
+
+                  <div class="mdc-text-field mdc-text-field--fullwidth">
+                    <input type="text" placeholder="Enter your mobile phone" id="my-text-field"
+                      class="mdc-text-field__input">
+                    <label for="my-text-field">Hint text</label>
+                    <div class="mdc-line-ripple"></div>
+                  </div>
+                  <p>We will call you ;-)</p>
+                </div>
+                <footer class="mdc-dialog__actions">
+                  <button type="button" class="mdc-button mdc-dialog__button"
+                    data-mdc-dialog-action="close">Cancel</button>
+                  <button type="button" class="mdc-button mdc-dialog__button"
+                    data-mdc-dialog-action="accept">Submit</button>
+                </footer>
+              </div>
+            </div>
+            <div class="mdc-dialog__scrim"></div>
+          </div>
+          <button class="mdc-button mdc-button-dialog mdc-button--raised">Open
+            the Dialog</button>
+
+        </div>
+
       </div>
-    </div>
+      <ul id="my-list" class="mdc-list" aria-orientation="vertical">
+        <li class="mdc-list-item">
+          <span class="mdc-list-item__text">Some cool text. Check this out</span>
+        </li>
+        <li class="mdc-list-item mdc-list-item--selected" aria-selected="true"
+          tabindex="0">
+          <span class="mdc-list-item__text">You have never seen this</span>
+        </li>
+        <li class="mdc-list-item">
+          <span class="mdc-list-item__text">The last but not the least item</span>
+        </li>
+      </ul>
+
   </main>
 
   <script src="bundle.js"></script>
