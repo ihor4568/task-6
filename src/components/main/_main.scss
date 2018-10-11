@@ -1,0 +1,11 @@
+.main {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 3rem;
+}
+
+.page {
+  margin: 0;
+}
